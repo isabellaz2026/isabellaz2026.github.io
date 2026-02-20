@@ -116,10 +116,12 @@
     .btn-outline:hover { background: rgba(212,120,143,.08); }
 
     /* Right image panel */
-    .hero-image {
+   .hero-image {
       position: relative;
       overflow: hidden;
       animation: fadeRight 1.1s ease both;
+      height: 100vh;
+      min-height: 100vh;
     }
 
     .pink-canvas {
@@ -361,8 +363,8 @@
 
     <div class="hero-image">
       <!-- Generative SVG pink illustration -->
-      <img src="IMG_9307.jpg" class="pink-canvas" style="object-fit:cover; width:100%; height:100%;" />
-
+      <img src="IMG_9307.jpg" style="object-fit:cover; width:100%; height:100%; display:block; position:absolute; top:0; left:0;" />
+      
       <!-- Floating badge -->
       <div class="badge">
         <div class="badge-icon">🌸</div>
